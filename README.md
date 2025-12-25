@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Better Auth Demo
 
-## Getting Started
+A full authentication demo built with **Next.js App Router**, **Better Auth**, **Neon PostgreSQL**, **Drizzle ORM**, and **shadcn/ui**.  
+This project demonstrates a modern, production-ready authentication flow including signup, login, protected routes, and logout.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Live Demo
+
+🔗 **Vercel Deployment**  
+https://better-auth-demo-nextjs.vercel.app
+
+📦 **GitHub Repository**  
+https://github.com/Arunkarthii/nextjs-better-auth-demo
+
+---
+
+## ✨ Features
+
+- Email & Password Authentication (Better Auth)
+- Signup & Login pages
+- Secure session handling
+- Protected dashboard route
+- Logout with loading state & error handling
+- Neon PostgreSQL database
+- Drizzle ORM adapter
+- shadcn/ui components
+- Environment-based configuration (local & production)
+- Deployed on Vercel
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Authentication:** Better Auth
+- **Database:** Neon (PostgreSQL)
+- **ORM:** Drizzle ORM
+- **UI:** shadcn/ui + Tailwind CSS
+- **Deployment:** Vercel
+
+---
+
+## 📁 Project Structure
+
+# Next.js Better Auth Demo
+
+A full authentication demo built with **Next.js App Router**, **Better Auth**, **Neon PostgreSQL**, **Drizzle ORM**, and **shadcn/ui**.  
+This project demonstrates a modern, production-ready authentication flow including signup, login, protected routes, and logout.
+
+---
+
+## 🚀 Live Demo
+
+🔗 **Vercel Deployment**  
+https://better-auth-demo-nextjs.vercel.app
+
+📦 **GitHub Repository**  
+https://github.com/Arunkarthii/nextjs-better-auth-demo
+
+---
+
+## ✨ Features
+
+- Email & Password Authentication (Better Auth)
+- Signup & Login pages
+- Secure session handling
+- Protected dashboard route
+- Logout with loading state & error handling
+- Neon PostgreSQL database
+- Drizzle ORM adapter
+- shadcn/ui components
+- Environment-based configuration (local & production)
+- Deployed on Vercel
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Authentication:** Better Auth
+- **Database:** Neon (PostgreSQL)
+- **ORM:** Drizzle ORM
+- **UI:** shadcn/ui + Tailwind CSS
+- **Deployment:** Vercel
+
+---
+
+## 📁 Project Structure
+
+app/
+├─ api/auth/[...all]/route.ts
+├─ dashboard/
+├─ login/
+├─ signup/
+├─ page.tsx
+└─ layout.tsx
+
+components/
+├─ ui/
+└─ logout.tsx
+
+db/
+├─ drizzle.ts
+└─ schema.ts
+
+lib/
+├─ auth.ts
+├─ auth-client.ts
+└─ utils.ts
+
+server/
+└─ user.ts
+
+
+---
+
+## 🔐 Environment Variables
+
+### Local Development (`.env.local`)
+```env
+DATABASE_URL=your_neon_database_url
+BETTER_AUTH_SECRET=your_32_character_secret
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+Production (Vercel)
+DATABASE_URL=your_neon_database_url
+BETTER_AUTH_SECRET=your_32_character_secret
+NEXT_PUBLIC_APP_URL=https://better-auth-demo-nextjs.vercel.app
+
+🧪 Run Locally
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open: http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📌 Notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+No secrets are hardcoded
 
-## Learn More
+Authentication URLs are environment-based
 
-To learn more about Next.js, take a look at the following resources:
+Built with scalability and production readiness in mind
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Clean separation of UI, auth logic, and database layer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+👤 Author
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Arun Karthikeyan
+Frontend Engineer | React | Next.js | TypeScript
